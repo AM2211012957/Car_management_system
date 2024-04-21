@@ -1,0 +1,22 @@
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 60vh; /* Mengisi tinggi seluruh halaman */
+    border: none; /* Menghilangkan garis luar container */
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+    margin: 50px; /* Menambahkan jarak antara card */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-header {
+    font-size: 2em;
+  }
+  

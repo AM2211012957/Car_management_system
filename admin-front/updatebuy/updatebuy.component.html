@@ -1,0 +1,61 @@
+<div id="outPopUp" class="">
+    <div class="">
+  
+        <!--to show error alert-->
+        <div *ngIf="errormsg" class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>{{errormsg}}</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+  
+          <!--to show success alert-->
+          <div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>{{successmsg}}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+  <br><br>
+          <div align="center">
+            <img  src="/assets/logo.png" style="height: 100px;">
+            <br><br>
+        <form  [formGroup]="buyForm" >
+          <div class="col-lg-4 mx-auto" >
+            <input type="text" class="form-control" formControlName="name" placeholder="NAME">
+          </div>
+          <br>
+          <div class="col-lg-4 mx-auto">
+            <input type="text" class="form-control" formControlName="email" placeholder="EMAIL">
+          </div>
+          <br>
+          <div class="col-lg-4 mx-auto">
+            <input type="text" class="form-control"  formControlName="phone_num" placeholder="PHONE NUMBER">
+          </div>
+          <br>
+          <div class="col-lg-4 mx-auto">
+            <select class="form-control" formControlName="car_buy">
+              <option value="">Select Car to buy</option>
+              <option value="Myvi">Myvi</option>
+              <option value="Mazda">Mazda</option>
+              <option value="Mazda">Mazda</option>
+              <option value="Fortuner">Fortuner</option>
+              <option value="Alphard">Alphard</option>
+            </select>
+          </div>
+          <br>
+          <div class="col-lg-4 mx-auto">
+            <select class="form-control" formControlName="payment">
+              <option value="">Select Payment</option>
+              <option value="Cash">Cash</option>
+              <option value="Loan">Loan</option>
+            </select>
+          </div>
+          <br>
+          <div  align="center" class="col-lg-15 mt-2" *ngIf="!getparamid" (click)="buyUpdate()">
+            <button >Confirm Update</button>
+        </div>
+  
+        </form>
+  
+      </div>
+    </div>
+  
+
+
