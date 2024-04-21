@@ -1,0 +1,22 @@
+@import url(https://bootswatch.com/5/zephyr/bootstrap.min.css);
+
+/* Centering the navigation links */
+.navbar-nav {
+    margin: auto;
+  }
+  
+  /* Moving the navbar-brand a little further */
+  .navbar-brand {
+    margin-right: 100px; /* You can adjust this value as needed */
+  }
+  .container-fluid {
+    padding-right: 50px; /* You can adjust this value as needed */
+    padding-left: 50px;
+  }
+  .nav-link{
+    font-size: 18px;
+    margin-right: 10px;
+    padding-left: 10px;
+    color: white;
+    
+  }

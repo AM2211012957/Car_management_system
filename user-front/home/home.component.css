@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-img{
+    width: 100vmin;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 49%;
+    left: 70%;
+    overflow: hidden;
+}
+.wrapper{
+    display: flex;
+    animation: slide 16s infinite;
+    max-width: 100%;
+    max-height: 100%;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img {
+    width: 100vmin; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+.container-2{
+    margin-top: 70px;
+    border: 2px solid #999;
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 88vmin;
+    height: 56vmin;
+    border-radius: 0.5rem;
+    text-align: left;
+}
+.container-2 button {
+    font-size: 20px; /* Increase font size */
+    padding: 0; /* Reset padding */
+    margin: 10px; /* Add margin between buttons */
+    display: inline-block; /* Ensure buttons are displayed in a row */
+    vertical-align: middle;
+    align-items: center; /* Center-align vertically */
+    justify-content: center; /* Center-align horizontally */
+    width: 200px; /* Set fixed width */
+    height: 50px; /* Set fixed height */
+}
+
+.container-2 button span {
+    padding: 15px 30px; /* Adjust padding */
+}
+.container-2 p {
+    display: inline-block; /* Ensure the paragraph remains inline with the buttons */
+    margin: 0; /* Remove default margin */
+    vertical-align: middle; /* Align vertically with the buttons */
+}
+
+.ui-card{
+	width: 348px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+	background:radial-gradient(#111 50%, #000 100%);
+    display: inline-block;
+    margin-right: 20px;
+}
+.ui-card img{
+	transform: scale(1.3);
+	transition: all 0.3s ease-out;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+}
+.ui-card:hover img{
+	transform: scale(1.1) translateY(-20px); 
+	opacity: 0.3
+}
+.ui-card .description{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+.ui-card .description h3{
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0 0 20px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+
+}
+.ui-card .description p{
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.2s;
+}
+.ui-card .description a{
+	color: #fff;
+	background:#34aff3;
+	display: inline-block;
+	padding: 10px 25px;
+	border-radius: 5px;
+	text-decoration: none;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.4s;
+}
+.ui-card .description a:hover{
+	background:#0a83c5;
+}
+.ui-card:hover .description h3{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .description p{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .description a{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+/*FOR BUY*/
+.ui-card-buy img{
+	max-width: 100%;
+}
+.ui-card-buy{
+	width: 348px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+	background:radial-gradient(#111 50%, #000 100%);
+    display: inline-block;
+    margin-right: 20px;
+}
+.ui-card-buy img{
+	transform: scale(1.3);
+	transition: all 0.3s ease-out;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+}
+.ui-card-buy:hover img{
+	transform: scale(1.1) translateY(-20px); 
+	opacity: 0.3
+}
+.ui-card-buy .description{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+.ui-card-buy .description h3{
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0 0 20px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+}
+.ui-card-buy .description p{
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.2s;
+}
+.ui-card-buy .description a{
+	color: #fff;
+	background:#34aff3;
+	display: inline-block;
+	padding: 10px 25px;
+	border-radius: 5px;
+	text-decoration: none;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.4s;
+}
+.ui-card-buy .description a:hover{
+	background:#0a83c5;
+}
+.ui-card-buy:hover .description h3{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card-buy:hover .description p{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card-buy:hover .description a{
+	opacity: 1;
+	transform: translateY(0px);
+}
+#footer {
+    background-color: black;
+    color: white; /* Setting text color to white for better contrast */
+}
+
